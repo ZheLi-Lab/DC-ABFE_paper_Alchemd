@@ -25,7 +25,7 @@ pip install matplotlib==3.6.0
 
 2. Install Alchemd:
 ```sh
-git clone https://github.com/***
+git clone https://github.com/ZheLi-Lab/DC-ABFE_paper_Alchemd 
 cd Alchemd
 pip install -e .
 ```
