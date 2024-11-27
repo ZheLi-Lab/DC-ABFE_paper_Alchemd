@@ -1,0 +1,35 @@
+[normalmd]
+normalmd=False
+
+[alchemical]
+alchemical = True
+mode = normal
+lambdas_json= lambdas.json
+lambdas_group= cal_mbar_lambda
+temperature = 300.0
+timestep = 2
+nsteps = 100
+niterations = 2500
+pdbx = mol.pdbx
+current_group_nb = 19
+current_group_chg = 0
+save_traj = False
+reportstate_freq = 1000
+savetraj_freq = 5000
+input_state = ../sterics_group18/alc_final_state.xml
+if_min_heat_density = False
+annihilate_electrostatics = True
+cal_adj_ene_num = 2
+simulation_lambdas_name = cal_mbar_lambda
+# For six degree of freedom restraint:
+kbond = 10
+ktheta1 = 10
+ktheta2 = 10
+kphi1 = 10
+kphi2 = 10
+kphi3 = 10
+
+[restraint]
+restraint = True
+f_npt_state = ../npt_final_state.xml # the final state of the preliminary MD simulation
+f_restraint = ../res_databystd.csv # the file logging the six-degree-of-freedom restraint pararmeters

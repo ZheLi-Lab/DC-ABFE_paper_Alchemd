@@ -1,0 +1,37 @@
+[normalmd]
+normalmd=False # do not run normal md
+
+[alchemical]
+alchemical = False # do not run alchemical md
+
+[restraint]
+restraint = True
+temperature = 300.0 
+timestep = 2 # in fs
+ligand_resname = MOL 
+iflog_restraint_detail = True # if True, save the detailed restraint information in the log file (all_lst)
+# increase temperature 50 times within 25000 timesteps (in this case, each time increase 6 Kelvin)
+heat_nsteps = 25000 # which is 50 ps
+heat_iterations = 50 # use 50 iterations to increase the temperature to 300 K
+density_nsteps = 25000 # which is 50 ps
+npt_nsteps = 1000000 # production with plumed, which is 2 ns
+f_npt_state = ./npt_final_state.xml
+save_traj = False
+reportstate_freq = 1000
+savetraj_freq = 50000
+f_plumed_input = plumed.dat # plumed input file, will be generated automatically
+f_plumed_output = Colvar # plumed output file, will be generated during the simulation
+lambdas_json = lambdas.json # the lambdas.json file that contains the lambda values for the lambda_restraints states
+lambdas_group = res_lambda # the group name in the lambdas.json file that contains the lambda values for the lambda_restraints states
+fake_state_xml = fake_state.xml # for skipping the running of the state_s0, if not state_s0.xml, it will not work.
+first_state_csv = npt_state.csv # according to the lambdas.json file and the respective lambdas_group, to generate the potential energy for each lambda_restraints state
+plumed_freq = 100 # plumed record frequency
+crd = None # assigned by the openmm-FEP-run.py -c option, but you can give the coordinate file of the structure that you like for the generation of candidate groups of restraint
+top = None # assigned by the openmm-FEP-run.py -p option, but you can give the topology file of the structure that you like for the generation of candidate groups of restraint
+res_sele_strategy = HB_pair|HB_mainchain # could be 'lig_shape|HB_pair|HB_mainchain|Huggins'
+opt_cost_name = RED_E_cost # could be 'RED_E_cost' or 'dG_forward' or False
+if_mean = False  # if_mean is True and the opt_cost_name is False, use the mean values of six parameters as the eq values for the harmonic restraint
+if_init_pose = False # if_mean is True and the opt_cost_name is False , use the initial values of six parameters from the input pose as the eq values for the harmonic restraint
+preliminary_md_inital_state = None
+preliminary_min_and_heat = True # if True, will run the minimization and heating process before the production MD simulation
+f_restraint = ./res_databystd.csv # the file logging the six-degree-of-freedom restraint pararmeters

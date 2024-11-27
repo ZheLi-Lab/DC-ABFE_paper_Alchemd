@@ -1,0 +1,26 @@
+[normalmd]
+normalmd=False
+
+[alchemical]
+alchemical = True
+mode = normal
+lambdas_json= lambdas.json
+lambdas_group= cal_mbar_lambda
+temperature = 300.0
+timestep = 2
+nsteps = 100
+niterations = 500
+pdbx = mol.pdbx
+current_group_nb = 14
+current_group_chg = 0
+save_traj = False
+reportstate_freq = 1000
+savetraj_freq = 5000
+input_state = ../sterics_group13/alc_final_state.xml
+if_min_heat_density = False
+annihilate_electrostatics = True
+cal_adj_ene_num = 2
+simulation_lambdas_name = cal_mbar_lambda
+
+[restraint]
+restraint = False

@@ -1,0 +1,2 @@
+[console_scripts]
+run_alchemd = alchemd.openmm_fep_run:main

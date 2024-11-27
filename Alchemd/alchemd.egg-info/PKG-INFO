@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: alchemd
+Version: 0.1.0
+Summary: An alchemical-based free energy calculation package (supporting DC-ABFE) using OpenMM
+Home-page: https://github.com/ZheLi-Lab/Alchemd_fep_dcabfe
+Author: Zhe Li, Runduo Liu
+Author-email: lizhe5@mail.sysu.edu.cn
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.9,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openmm==7.7
+Requires-Dist: openmmtools==0.21.5
+Requires-Dist: tqdm
+Requires-Dist: alive-progress
+
+Alchemd: 
+A versatile and easy to use software for FEP calculation.
+
+## Installation
+1. Install Dependencies:
+- Python 3.9 or higher
+- cudatoolkit 11.0
+- openmm 7.7
+- openmmtools 0.21.5
+- plumed 2.9.2
+- openmm-plumed 1.0
+- tqdm 4.67.1
+- alive-progress 2.4.1
+```sh
+conda create --name alchemd_fep python=3.9
+conda activate alchemd_fep
+conda install openmm=7.7 openmmtools=0.21.5 cudatoolkit=11.0 -c conda-forge
+conda install plumed openmm-plumed tqdm -c conda-forge
+conda install parmed -c conda-forge
+pip install alive-progress==2.4.1
+```
+
+2. Install Alchemd:
+```sh
+git clone https://github.com/***
+cd Alchemd
+pip install -e .
+```

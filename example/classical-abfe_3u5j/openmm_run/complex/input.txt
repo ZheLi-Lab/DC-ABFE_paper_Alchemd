@@ -1,0 +1,59 @@
+[normalmd]
+normalmd=False
+
+
+[alchemical]
+alchemical = False
+mode = normal
+lambdas_json= lambdas.json
+lambdas_group= res_lambda
+temperature = 300.0
+timestep = 2
+nsteps = 100
+niterations = 1
+pdbx = None
+current_group_nb = 0
+current_group_chg = 0
+save_traj = False
+reportstate_freq = 1000
+savetraj_freq = 5000
+input_state = none.xml
+if_min_heat_density = False
+annihilate_electrostatics = True
+cal_adj_ene_num = 5
+simulation_lambdas_name = res_lambda
+
+
+
+[restraint]
+restraint = True
+temperature = 300.0
+timestep = 2
+ligand_resname = MOL
+iflog_restraint_detail = True
+# increase temperature 50 times within 25000 timesteps (in this case, each time increase 6 Kelvin)
+heat_nsteps = 25000
+heat_iterations = 50
+density_nsteps = 25000 # density
+npt_nsteps = 1000000 # production with plumed
+f_npt_state = /data/run01/scz1641/bygroup/Packup_to_Bingxing/BRD4_bygroup/normal_ABFE_test/3u5j/openmm_run/complex/npt_final_state.xml
+save_traj = False
+reportstate_freq = 1000
+savetraj_freq = 50000
+f_plumed_input = plumed.dat
+f_plumed_output = Colvar
+lambdas_json = lambdas.json
+lambdas_group = res_lambda
+fake_state_xml = fake_state.xml # for skipping the running of the state_s0, if not state_s0.xml, it will not work.
+first_state_csv = npt_state.csv
+plumed_freq = 100 # plumed record frequency
+crd = None # assigned by the openmm-FEP-run.py -c option, but you can give the coordinate file of the structure that you like for the generation of candidate groups of restraint
+top = None # assigned by the openmm-FEP-run.py -p option, but you can give the topology file of the structure that you like for the generation of candidate groups of restraint
+res_sele_strategy = lig_shape|HB_pair|HB_mainchain|Huggins # could be 'lig_shape|HB_pair|HB_mainchain|Huggins'
+opt_cost_name = RED_E_cost # could be 'RED_E_cost' or 'dG_forward' or False
+if_mean = False  # if_mean is True and the opt_cost_name is False, use the mean values of six parameters as the eq values for the harmonic restraint
+if_init_pose = False # if_mean is True and the opt_cost_name is False , use the initial values of six parameters from the input pose as the eq values for the harmonic restraint
+preliminary_md_inital_state = None
+preliminary_min_and_heat = True
+f_restraint = /data/run01/scz1641/bygroup/Packup_to_Bingxing/BRD4_bygroup/normal_ABFE_test/3u5j/openmm_run/complex/res_databystd.csv # the file logging the six-degree-of-freedom restraint pararmeters
+
