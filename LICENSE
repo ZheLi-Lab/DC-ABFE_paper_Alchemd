@@ -1,0 +1,121 @@
+# Dual License for Alchemd Software
+
+Copyright (C) 2024 The Zhe Li Research Group at the Sun Yat-sen University. All Rights Reserved.
+
+## Overview
+This software is available under a dual-license model. Users can choose between:
+1. Academic License (for academic and research purposes)
+2. Commercial License (for commercial and proprietary use)
+
+## Academic License
+
+### Eligibility
+- Academic institutions
+- Research organizations
+- Individual researchers
+- Students
+- Non-profit organizations conducting research
+
+### Permissions
+1. Use the software for research and academic purposes
+2. Modify the software for research purposes
+3. Share modifications with the academic community
+4. Include the software in academic research projects
+5. Use the software for academic publications
+
+### Requirements
+1. Citation Requirements:
+   - Must cite the following papers in any resulting publications:
+     
+   - Must cite the software itself as:
+     
+
+2. Attribution Requirements:
+   - Maintain all copyright notices and attributions
+   - Include a copy of this license
+   - Clearly mark any modifications made to the software
+
+3. Sharing Requirements:
+   - Share any bug fixes with the original authors
+   - Share significant improvements or modifications that could benefit the academic community
+
+### Restrictions
+1. No commercial use, including but not limited to:
+   - Sale of the software or derivatives
+   - Use in commercial products or services
+   - Use for commercial research without a commercial license
+   - Consulting services based on the software
+
+2. No redistribution rights except within academic collaboration
+
+3. No sublicensing rights
+
+## Commercial License
+
+### Overview
+Commercial use requires a separate written agreement with the copyright holders.
+
+### Commercial Use Definition
+Commercial use includes, but is not limited to:
+1. Using the software in a commercial organization
+2. Using the software to provide commercial services
+3. Using the software in commercial research
+4. Including the software in commercial products
+5. Using the software to generate revenue directly or indirectly
+6. Using the software for consulting services
+
+### Commercial License Benefits
+1. Full rights to use the software in commercial applications
+2. No requirement to open source modifications
+3. Private deployment rights
+4. Technical support (as specified in the commercial agreement)
+5. Priority bug fixes and feature requests
+6. Customization options
+
+### Commercial License Options
+Multiple licensing options are available:
+1. Single-Site License
+2. Enterprise-Wide License
+3. OEM License
+4. Custom License
+
+### How to Obtain a Commercial License
+For commercial licensing inquiries, please contact:
+- Email: [lizhe5@mail.sysu.edu.cn]
+
+Please provide the following information:
+1. Organization name and contact information
+2. Intended use of the software
+3. Deployment scale
+4. Required support level
+5. Timeline for implementation
+
+## General Terms
+
+### Warranty Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+### Limitation of Liability
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+### Termination
+1. Academic license automatically terminates if you breach any of its terms
+2. Commercial license termination is governed by the specific commercial agreement
+
+
+## Rights Reserved
+1. The copyright holders reserve all rights not expressly granted
+2. The copyright holders reserve the right to change license terms for future versions
+3. The copyright holders reserve the right to grant exceptions to these terms
+
+## Contact Information
+For any questions regarding this license:
+- Author: [Zhe Li]
+- Email: [lizhe5@mail.sysu.edu.cn]
+
+Version 1.0, [Date]
