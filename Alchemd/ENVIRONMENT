@@ -1,5 +1,0 @@
-conda create --name openmm-plumed
-conda activate openmm-plumed
-
-conda install openmm cudatoolkit=11.0 -c conda-forge
-conda install openmmtools plumed openmm-plumed tqdm -c conda-forge

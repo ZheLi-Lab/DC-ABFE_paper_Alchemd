@@ -1,4 +1,0 @@
-openmm==7.7
-openmmtools==0.21.5
-tqdm
-alive-progress
