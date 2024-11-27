@@ -261,7 +261,7 @@ class InputParser:
                 'simulation_lambdas_name': None,
                 'set_rbfe_exception': False,
                 'get_atomset_mode': 'cs_fep',  # normal_by_group, cs_fep, pseudocore
-                'softcore': 'ssc2',  # gapsys, ssc2 or old
+                'softcore': 'old',  # gapsys, ssc2 or old
                 'lambdas_per_state': 1,  # how many lambdas in lambda_json count as a single state.
                 'temperature': 298.0, 
                 'timestep': 2,  #unit in fs, could be 4 fs, but it may cause unstablity of MD
