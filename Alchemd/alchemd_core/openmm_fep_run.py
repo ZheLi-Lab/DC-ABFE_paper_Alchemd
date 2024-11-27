@@ -1,5 +1,5 @@
-from alchemd.utils.file_parser import InputParser
-from alchemd.utils.run import RunAlchemdSimulation
+from alchemd_core.utils.file_parser import InputParser
+from alchemd_core.utils.run import RunAlchemdSimulation
 from optparse import OptionParser
 import sys
 
