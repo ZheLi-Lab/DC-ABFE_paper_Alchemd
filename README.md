@@ -11,7 +11,6 @@ A versatile and easy to use software for FEP calculation.
 - openmm-plumed 1.0
 - tqdm 4.67.1
 - parmed 
-- alive-progress 2.4.1
 - matplotlib 3.6.0
 ```sh
 conda create --name alchemd_fep python=3.9
@@ -19,7 +18,6 @@ conda activate alchemd_fep
 conda install openmm=7.7 openmmtools=0.21.5 cudatoolkit=11.0 -c conda-forge
 conda install plumed openmm-plumed tqdm -c conda-forge
 conda install parmed -c conda-forge
-pip install alive-progress==2.4.1
 pip install matplotlib==3.6.0
 ```
 
