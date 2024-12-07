@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+alchemd_core.egg-info/PKG-INFO
+alchemd_core.egg-info/SOURCES.txt
+alchemd_core.egg-info/dependency_links.txt
+alchemd_core.egg-info/entry_points.txt
+alchemd_core.egg-info/requires.txt
+alchemd_core.egg-info/top_level.txt
